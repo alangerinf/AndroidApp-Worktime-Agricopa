@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >        
+        <!-- Title Content -->
+        <include layout="@layout/util_title_simple_view" />
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dip" 
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:id="@+id/lblTarea"
+                style="@style/TextView"
+                android:text="@string/lbltar" />
+
+            <TextView
+                android:id="@+id/lblGrupo"
+                style="@style/TextView"
+                android:text="@string/lblGrup" />
+
+            <Spinner
+                android:id="@+id/cboGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_Asistencia"
+                style="@style/ButtonS"
+                android:text="@string/lblAsis" />
+
+            <Button
+                android:id="@+id/btnTransferencia"
+                style="@style/ButtonS"
+                android:text="@string/lblTrans" />
+            
+            
+            <Button
+                android:id="@+id/btn_Salida"
+                style="@style/ButtonS"
+                android:text="@string/lblsal" />
+            
+            <Button
+                android:id="@+id/btnNewGrupo"
+                style="@style/ButtonS"
+                android:text="@string/lblnewGroup" />
+            
+        </LinearLayout>
+        <!-- End Content -->
+    </LinearLayout>
+</ScrollView>

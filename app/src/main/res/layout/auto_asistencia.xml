@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >        
+        <!-- Title Content -->
+        <include layout="@layout/util_title_simple_view" />        
+        <!-- Content -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout"
+            android:orientation="vertical"
+            android:padding="8dip" >
+
+            <TextView
+                android:id="@+id/lblConsumidorIndirecto"
+                style="@style/TextView"
+                android:text="Consumidor Indirecto" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="false" />
+
+            <TextView
+                android:id="@+id/lblTurno"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bllTurnoo" />
+
+            <Spinner
+                android:id="@+id/cboTurno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="DNI" />
+
+            <EditText
+                android:id="@+id/txt_doc"
+                style="@style/InputText"
+                android:inputType="number"
+                android:maxLength="8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    android:id="@+id/txt_TextCheckBox"
+                    style="@style/TextViewValue"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lblAutoIngresar" />
+
+                <CheckBox
+                    android:id="@+id/checkAutoAgregado"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_TextCheckBox"
+                    android:text="@string/lblAut" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_agregar"
+                style="@style/ButtonS"
+                android:text="@string/lbl_Add" />
+
+            <TextView
+                android:id="@+id/txt_detalle"
+                style="@style/TextView"
+                android:textColor="#FF0000" />
+            
+        </LinearLayout>
+
+        <!-- End Content -->
+    </LinearLayout>
+</ScrollView>

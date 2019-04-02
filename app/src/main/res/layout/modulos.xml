@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >        
+        <!-- Title Content -->
+        <include layout="@layout/util_title_simple_view" />
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dip" 
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:id="@+id/lblFundo"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:text="@string/lbl_te_fundo" />
+ 
+            <TextView
+                android:id="@+id/lbl_modulo"
+                style="@style/TextView"
+                android:text="@string/txt_modx" />
+
+            <Spinner
+                android:id="@+id/cboModulos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+			
+            <Button
+                android:id="@+id/btn_TipoActividad"
+                style="@style/ButtonS"
+                android:text="@string/txt_tipoActividad" />
+       	     
+        </LinearLayout>
+        <!-- End Content -->
+    </LinearLayout>
+</ScrollView>

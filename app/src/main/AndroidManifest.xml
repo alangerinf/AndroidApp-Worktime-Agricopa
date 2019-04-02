@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.worktime">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_24"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_24"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="pe.worktime.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".loadingActivity"/> -->
+        <activity android:name="pe.worktime.FundoActivity" />
+        <activity android:name="pe.worktime.ModuloActivity" />
+        <activity android:name="pe.worktime.TrabajadoresActivity" />
+        <activity android:name="pe.worktime.InfoFundoActivity" />
+        <activity android:name="pe.worktime.SincronizarActivity" />
+        <activity android:name="pe.worktime.TurnoActivity" />
+        <activity android:name="pe.worktime.InfoModuloActivity" />
+        <activity android:name="pe.worktime.InfoTurnoActivity" />
+        <activity android:name="pe.worktime.TareaActivity" />
+        <activity android:name="pe.worktime.TareaSeleccionActivity" />
+        <!-- <activity android:name=".ActividadController"/> -->
+        <!-- <activity android:name=".controller.ConsumidorIndirectoActivity"/> -->
+        <activity android:name="pe.worktime.TipoActividadActivity" />
+        <activity android:name="pe.worktime.AsistenciaTabActivity" />
+        <activity android:name="pe.worktime.AutoAsistencia" />
+        <activity android:name="pe.worktime.ManualAsistenciaActivity" />
+        <activity android:name="pe.worktime.ResumenAsistenciaActivity" />
+        <activity android:name="pe.worktime.MenuPrincipalActivity" />
+        <activity android:name="pe.worktime.TipoEntradaActivity" />
+        <activity android:name="pe.worktime.GrupoActivity" />
+        <activity android:name="pe.worktime.EntradaManualActivity" />
+        <activity android:name="pe.worktime.EntradaAutomaticaActivity" />
+        <!-- <activity android:name=".Helper_Adapter"/> -->
+        <activity android:name="pe.worktime.PlanillaTabActivity" />
+        <activity android:name="pe.worktime.PlanillaAsistenciaActivity" />
+        <activity android:name="pe.worktime.PlanillaEntradaManualActivity" />
+        <activity android:name="pe.worktime.PlanillaEntradaAutomaticaActivity" />
+        <activity android:name="pe.worktime.TipoEntradaIngresoActivity" />
+        <activity android:name="pe.worktime.TipoEntradaSalidaActivity" />
+        <activity android:name="pe.worktime.TipoEntradaTransferenciaActivity" />
+        <activity android:name="pe.worktime.ResumenIngresoActivity" />
+        <activity android:name="pe.worktime.IngresoAsistenciaActivity" />
+        <activity android:name="pe.worktime.SalidaManualActivity" />
+        <activity android:name="pe.worktime.SalidaAutomaticoActivity" />
+        <activity android:name="pe.worktime.ResumenSalidaActivity" />
+        <activity android:name="pe.worktime.SalidaAsistenciaActivity" />
+        <activity android:name="pe.worktime.SalidaTabActivity" />
+        <activity android:name="pe.worktime.TransferenciaTabActivity" />
+        <activity android:name="pe.worktime.TransferenciaManualActivity" />
+        <activity android:name="pe.worktime.TransferenciaAutomaticaActivity" />
+        <activity android:name="pe.worktime.ResumenTransferenciaActivity" />
+        <activity android:name="pe.worktime.TransferenciaAsistenciaActivity" />
+        <activity android:name="pe.worktime.ActivityUtil" />
+        <activity android:name="pe.worktime.LoadingActivity" />
+        <activity android:name="pe.worktime.ProductividadManualActivity" />
+        <activity android:name="pe.worktime.ProductividadTabActivity" />
+        <activity android:name="pe.worktime.ProductividadEntradaActivity" />
+        <activity android:name="pe.worktime.ProductividadDetalleActivity" />
+        <activity android:name="pe.worktime.ProductividadResumenActivity" />
+        <activity android:name="pe.worktime.SalidaManualTareaActivity" />
+        <activity android:name="pe.worktime.ServicioATercerosActivity" />
+        <activity android:name="pe.worktime.OpcionesHistorialActivity" />
+        <activity android:name="pe.worktime.AutenticacionHistorialActivity" />
+        <activity android:name="pe.worktime.PlanillaHistorialActivity" />
+        <activity android:name="pe.worktime.PlanillaEliminarActivity" />
+        <activity android:name="pe.worktime.VerDetalleHistorialActivity" />
+        <activity android:name="pe.worktime.EscanearQR"></activity>
+        <activity android:name="pe.worktime.TipoProductividadActivity"></activity>
+        <activity android:name="pe.worktime.ProductividadListaActivity"></activity>
+
+    </application>
+
+</manifest>

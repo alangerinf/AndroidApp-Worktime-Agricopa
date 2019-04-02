@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >        
+        <!-- Title Content -->
+        <include layout="@layout/util_title_simple_view" />
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dip" 
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout">            
+
+            <TextView
+                android:id="@+id/lblDniAutomatica"
+                style="@style/TextView"
+                android:text="@string/lblDniManual" />
+
+            <EditText
+                android:id="@+id/txtDniAutomatico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="8"
+                android:focusable="false">
+
+
+            </EditText>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/txtMsjAgregadoAutomatico"
+                style="@style/TextView"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/btn_lecturar_manual"
+                style="@style/ButtonS"
+                android:text="@string/btn_qr" />
+
+            <!--
+            <Button
+                android:id="@+id/btn_agregar_automatico"
+                style="@style/ButtonS"
+                android:text="@string/btn_add" />
+            -->
+            
+            <Button
+                android:id="@+id/btn_limpia_dni"
+                style="@style/ButtonS"
+                android:text="Limpiar DNI" />
+
+        </LinearLayout>
+        <!-- End Content -->
+    </LinearLayout>
+</ScrollView>

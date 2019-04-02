@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/TitleBarSimple" >
+
+        <ImageView
+            android:id="@+id/iconTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:contentDescription="@string/iconTitleDescription"
+            android:src="@drawable/ico_logo"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/iconTitle"
+            android:layout_toLeftOf="@+id/buttonTitle"
+            android:layout_toRightOf="@+id/iconTitle"
+            android:contentDescription="@string/iconTitleDescription"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/Title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/buttonTitle"
+            style="@style/TitleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/backDescription"
+            android:src="@drawable/ico_home"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:layout_weight="0.89"
+        android:background="@drawable/bg_layout"
+        android:orientation="vertical"
+        android:padding="8dip" >
+
+        <TextView
+            android:id="@+id/lblNombreFundo"
+            style="@style/TextView"
+            android:text="@string/lbl_info_fundo" />
+
+        <TextView
+            android:id="@+id/lblnroModulos"
+            style="@style/TextView"
+            android:text="@string/lblNumMod" />
+
+        <TextView
+            android:id="@+id/lblmod"
+            style="@style/TextView"
+            android:text="@string/lblModd" />
+    </LinearLayout>
+
+</LinearLayout>

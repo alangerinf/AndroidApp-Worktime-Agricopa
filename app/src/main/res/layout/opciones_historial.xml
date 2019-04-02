@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >        
+        <!-- Title Content -->
+        <include layout="@layout/util_title_simple_view" />
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dip" 
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout">
+
+            <Button
+                android:id="@+id/btn_borrar_historial"
+                style="@style/ButtonS"
+                android:text="@string/lbl_borrar_historial" />
+
+            <Button
+                android:id="@+id/btn_recuperar_historial"
+                style="@style/ButtonS"
+                android:text="@string/lbl_recuperar_historial" />
+            
+            <Button
+                android:id="@+id/btn_salir_historial"
+                style="@style/ButtonS"
+                android:text="@string/lbl_salir_historial" />
+            
+        </LinearLayout>
+        <!-- End Content -->
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/title" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/TitleBarSimple" >
+    <ImageView
+        android:id="@+id/iconTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ico_logo"    
+        android:contentDescription="@string/iconTitleDescription"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dip"/>
+    <TextView
+        android:id="@+id/textTitleF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/iconTitle"
+        android:layout_toLeftOf="@+id/buttonTitle"
+        android:layout_toRightOf="@+id/iconTitle"
+        android:text="@string/Title"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:gravity="center_vertical|center_horizontal" 
+        android:contentDescription="@string/iconTitleDescription"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/buttonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ico_home" 
+        android:visibility="invisible" 
+        style="@style/TitleButton"
+        android:contentDescription="@string/backDescription"/>    
+</RelativeLayout>

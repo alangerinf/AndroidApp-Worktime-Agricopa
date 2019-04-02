@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >        
+        <!-- Title Content -->
+        <include layout="@layout/util_title_simple_view" />
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dip" 
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout">
+  
+            <TextView
+                android:id="@+id/lbl_consumidorIndirecto"
+                style="@style/TextView"
+                android:text="@string/lbl_consumidor" />
+
+            <Spinner
+                android:id="@+id/cboTipoConsumidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_Turno"
+                style="@style/ButtonS"
+                android:text="@string/txt_b_turnos" />
+			
+            <Button
+                android:id="@+id/btn_Actividades"
+                style="@style/ButtonS"
+                android:text="@string/txt_Actividades" />
+            
+            <Button
+                android:id="@+id/btn_Grupo"
+                style="@style/ButtonS"
+                android:text="@string/txt_Grupo" />
+       	     
+        </LinearLayout>
+        <!-- End Content -->
+    </LinearLayout>
+</ScrollView>

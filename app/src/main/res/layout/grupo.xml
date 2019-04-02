@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >        
+        <!-- Title Content -->
+        <include layout="@layout/util_title_simple_view" />
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dip" 
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout">    
+            
+            
+            
+            <TextView
+                android:id="@+id/lblTipoLabor"
+                style="@style/TextView"
+                android:text="@string/lbltipolabor" />
+            <Spinner
+                    android:id="@+id/cboTipoLabor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/lblFundo"
+                style="@style/TextView"
+                android:text="@string/lblFundos" />
+            <Spinner
+                    android:id="@+id/cboFundoGrupo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lbl_cultivo"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_cultivo" />
+
+            <Spinner
+                android:id="@+id/cboCultivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/lblTipoActividad"
+                style="@style/TextView"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:text="TipoActividad" />
+
+            <Spinner
+                android:id="@+id/cboTipoActividadGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_tipoActividad"/>
+
+            <!--<TextView
+                android:id="@+id/lblHorario"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <Spinner
+                android:id="@+id/cboHorarioGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/lblActividad"
+                style="@style/TextView"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lblActividades" />
+            
+   			<Spinner
+			   android:id="@+id/cboActividadGrupo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+   			   android:focusable="false"
+   			   android:descendantFocusability="beforeDescendants"
+					                 />
+
+
+            <Spinner
+                android:id="@+id/cboActividadIndirectaGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblGrupo"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_Grupo" />
+
+            <Spinner
+                android:id="@+id/cboGrupoGrup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblTurnoGrupo"
+                style="@style/TextView"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_turno" />
+
+            <Spinner
+                android:id="@+id/cboTurnoGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/lblmodulo"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_Modulos" />
+
+            <Spinner
+                android:id="@+id/cboModuloGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblConsumidorIndirecto"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_ConsumidorIndirecto" />
+
+
+
+            <Spinner
+                android:id="@+id/cboConsumidorIndirectoGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_Siguiente_Grupo"
+                style="@style/ButtonS"
+                android:text="@string/lblis" />
+            <Button
+                android:id="@+id/btn_Tranferir"
+                style="@style/ButtonS"
+                android:text="Transferir" />
+
+        </LinearLayout>
+        <!-- End Content -->
+    </LinearLayout>
+</ScrollView>

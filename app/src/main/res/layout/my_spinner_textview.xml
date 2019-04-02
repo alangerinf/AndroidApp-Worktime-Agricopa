@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:focusable="false"
+	        android:descendantFocusability="beforeDescendants"
+	      >  
+	        
+		       <TextView  
+				   android:id="@+id/textview_spinner"
+				    style="?android:attr/spinnerItemStyle"
+				 	android:ellipsize="marquee"
+		       		android:marqueeRepeatLimit ="marquee_forever"
+		       		android:focusable="false"
+		        	android:scrollHorizontally="true"
+		        	android:layout_width="wrap_content" 
+		      		android:layout_height="wrap_content"
+		      		android:padding="5sp"
+		      		android:descendantFocusability="beforeDescendants"
+				 />		   
+
+				       
+ </HorizontalScrollView>
+		        
+      

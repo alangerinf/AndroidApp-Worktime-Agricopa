@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Title Content -->
+
+        <include layout="@layout/util_title_simple_view" />
+        <!-- Content -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/bg_layout"
+            android:orientation="vertical"
+            android:padding="8dip" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dip"
+                    android:layout_toLeftOf="@+id/txt_grand_total"
+                    android:text="Actividad:" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+            
+                <TextView
+                    android:id="@+id/txt_actividad"
+                    style="@style/TextViewValue"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="0dip"
+                    android:text="" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_item"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    style="@style/TextView"
+                    android:id="@+id/lbl_Grupo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dip"
+                    android:layout_toLeftOf="@+id/txt_s_h"
+                    android:text="Fecha: " />
+
+                <TextView
+                    android:id="@+id/txt_grupo"
+                    style="@style/TextViewValue"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="0dip"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dip"
+                    android:layout_toLeftOf="@+id/txt_sub_total"
+                    android:text="Nro. Presentes" />
+
+                <TextView
+                    android:id="@+id/txt_nro_Asistentes"
+                    style="@style/TextViewValue"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="12dip"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dip"
+                    android:layout_toLeftOf="@+id/txt_taxes"
+                    android:text="Nro. Salidas" />
+
+                <TextView
+                    android:id="@+id/txt_faltas"
+                    style="@style/TextViewValue"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="12dip"
+                    android:text="0" />
+            </RelativeLayout>
+            
+
+
+            <Button
+                android:id="@+id/btn_continue"
+                style="@style/ButtonS"
+                android:text="Registrar"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+        <!-- End Content -->
+    </LinearLayout>
+
+</ScrollView>
